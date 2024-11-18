@@ -1,0 +1,175 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* margin: auto; */
+    font-family: Arial, sans-serif; /* Optional: Add a clean font */
+    display: flex; /* Centering the container in the viewport */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    height: 60px;
+}
+.header-in {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.header-in .nav-in {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+#profile-modal {
+    width: 300px;
+    transform: translateX(-262px) translateY(13px);
+}
+
+.main-container {
+    /* position: absolute; */
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1300px; /* Ensure the container respects max width */
+    padding: 0 1rem; /* Add padding for smaller screens */
+    margin: 0 auto; /* Center horizontally within body */
+}
+.gamburger {
+    display: none;
+    /* padding: 0.8rem 0.5rem; */
+}
+#hs-offcanvas-right {
+    width: 400px;
+}
+.carusel-body-top {
+    height: 640px;
+}
+.hover-nav {
+    position: fixed;
+    /* top: 60px; */
+    left: 0;
+    right: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    box-sizing: border-box;
+}
+#nav-center {
+    z-index: 1000;
+    height: 100%;
+}
+#hs-offcanvas-example{
+    width: 400px;
+}
+/* Responsive Utilities (Mobile First Approach) */
+@media screen and (max-width: 370px) {
+    .header-in nav .nav-in {
+        display: flex;
+        flex-direction: column;
+    }
+    #profile-modal {
+        margin-top: 40px;
+    }
+    .right-menu-items {
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .left-menu-items {
+        width: 100%;
+        text-align: left;
+    }
+    header {
+        height: 100px;
+    }
+}
+/* Kichik ekranlar uchun */
+@media (max-width: 639px) {
+    #hs-offcanvas-example {
+        width: 100%;
+    }
+    #profile-modal {
+        border-radius: 0px;
+        border-bottom: 1px solid gray;
+        position: absolute;
+        width: 100%; /* Set the modal's width to 100% */
+        transform: translateX(0); /* Center it if needed */
+        top: 46px;
+        z-index: 111;
+        padding: 0px;
+        left: 0;
+    }
+    #hs-offcanvas-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carusel-body-top {
+        height: 480px;
+    }
+    .gamburger {
+        display: flex;
+    }
+    #nav-center {
+        display: none;
+    }
+}
+
+/* O'rta ekranlar uchun */
+@media (min-width: 640px) {
+    .main-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .header-in .nav-in {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #hs-offcanvas-example {
+        display: none;
+    }
+}
+
+/* Katta ekranlar uchun */
+@media (min-width: 1024px) {
+    .main-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .header-in .nav-in {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .grid-responsive {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
+    }
+}
+
+/* Juda katta ekranlar uchun */
+@media (min-width: 1300px) {
+    .grid-responsive {
+        grid-template-columns: repeat(5, 1fr); /* Five columns for extra-large screens */
+    }
+}
