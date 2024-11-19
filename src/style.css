@@ -33,12 +33,11 @@ header {
     padding: 0 1rem;
 }
 #profile-modal {
-    width: 300px;
-    transform: translateX(-262px) translateY(13px);
+    transform: translateX(-262px) translateY(10px);
 }
 #heart-modal {
-    width: 300px;
-    transform: translateX(-222px) translateY(260px);
+    width: 400px;
+    transform: translateX(-315px) translateY(10px);
 }
 
 .main-container {
@@ -54,9 +53,19 @@ header {
     display: none;
     /* padding: 0.8rem 0.5rem; */
 }
-#hs-offcanvas-right {
+/* #hs-offcanvas-right {
     width: 400px;
+} */
+#men-modal,
+#women-modal {
+    display: none; /* Yashirilgan holat */
+    width: 100%; /* Avtomatik kenglik */
 }
+.active-btn {
+    background-color:#808080;
+    color: white;
+}
+
 .carusel-body-top {
     height: 640px;
 }
@@ -77,13 +86,10 @@ header {
     height: 100%;
     padding: 30px 0px;
 }
-#nav-center button{
+#nav-center button {
     height: 100%;
     position: absolute;
     top: 0px;
-}
-#hs-offcanvas-example {
-    width: 400px;
 }
 
 .scroll-style {
@@ -105,8 +111,9 @@ header {
 
 /* Responsive Utilities (Mobile First Approach) */
 @media screen and (max-width: 370px) {
-    .header-in nav .nav-in {
+    .header-in .nav-in {
         display: flex;
+        padding: 10px;
         flex-direction: column;
     }
     #profile-modal {
@@ -128,12 +135,17 @@ header {
         height: 100px;
     }
 }
+.btn-active {
+    background-color: #808080;
+}
 /* Kichik ekranlar uchun */
 @media (max-width: 639px) {
     #hs-offcanvas-example {
         width: 100%;
     }
-    #profile-modal {
+
+    #heart-modal {
+        transform: translateX(0); /* Center it if needed */
         border-radius: 0px;
         border-bottom: 1px solid gray;
         position: absolute;
@@ -143,9 +155,7 @@ header {
         z-index: 111;
         padding: 0px;
         left: 0;
-    }
-    #hs-offcanvas-right {
-        width: 100%;
+        width: 100%; /* Set the modal's width to 100% */
     }
 }
 
@@ -192,15 +202,5 @@ header {
     .header-in .nav-in {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-    .grid-responsive {
-        grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
-    }
-}
-
-/* Juda katta ekranlar uchun */
-@media (min-width: 1300px) {
-    .grid-responsive {
-        grid-template-columns: repeat(5, 1fr); /* Five columns for extra-large screens */
     }
 }
