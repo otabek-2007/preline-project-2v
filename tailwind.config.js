@@ -1,13 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-// tailwind.config.js
 module.exports = {
   darkMode: 'class',
   content: [
-    './src/**/*.{html,js,css}',
-    'node_modules/preline/dist/*.js',
+    './**/*.{html,js}', // Barcha HTML va JS fayllar
+    './src/**/*.{html,js}', // Agar src papkasi bo'lsa
   ],
-  plugins: [
-    // require('@tailwindcss/forms'),
-    require('preline/plugin'),
-  ],
-}
+  plugins: [require('preline/plugin')],
+  theme: {
+    extend: {},
+  },
+};
