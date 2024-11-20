@@ -33,6 +33,7 @@ header {
     padding: 0 1rem;
 }
 #profile-modal {
+    width: 300px;
     transform: translateX(-262px) translateY(10px);
 }
 #heart-modal {
@@ -62,7 +63,7 @@ header {
     width: 100%; /* Avtomatik kenglik */
 }
 .active-btn {
-    background-color:#808080;
+    background-color: #808080;
     color: white;
 }
 
@@ -156,6 +157,13 @@ header {
         padding: 0px;
         left: 0;
         width: 100%; /* Set the modal's width to 100% */
+    }
+    #profile-modal {
+        transform: translateX(0); /* Center it if needed */
+        position: absolute;
+        left: 0;
+        top: 59px;
+        width: 100%;
     }
 }
 
