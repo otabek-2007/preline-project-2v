@@ -68,12 +68,17 @@
                 </div>
                 <!-- Navigation Links (Center) -->
                 <div id="nav-center" class="hidden sm:flex justify-center items-center">
-                    <div class="flex flex-row md:gap-x-16 lg:gap-x-20">
+                    <div class="flex flex-row md:gap-x-20 gap-x-16">
                         <div class="hs-dropdown [--strategy:static] [--adaptive:none] sm:[--trigger:hover]">
                             <button id="hs-mega-menu" type="button"
                                 class="hs-dropdown-toggle flex items-center text-white font-medium hover:text-gray-200 focus:underline focus:text-gray-200 dark:text-neutral-200 hover:underline underline-offset-2 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                                 aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
                                 Pages
+                                <span class="absolute -top-1 -end-2">
+                                    <span
+                                        class="tliya relative flex items-center justify-center w-4 h-4 bg-pink-500 rounded-full animate-heartbeat"></span>
+
+                                </span>
                             </button>
                             <div class="hs-dropdown-menu hidden z-10 start-0 w-full bg-white sm:shadow-md rounded-lg dark:bg-neutral-900 hover-nav"
                                 role="menu" aria-orientation="vertical" aria-labelledby="hs-mega-menu">
@@ -316,9 +321,10 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="hs-dropdown [--strategy:static] [--adaptive:none] sm:[--trigger:hover]">
                             <button id="hs-mega-menu" type="button"
-                                class="hs-dropdown-toggle flex items-center text-white font-medium hover:text-gray-200 focus:underline focus:text-gray-200 dark:text-neutral-200 hover:underline underline-offset-2 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                class=" hs-dropdown-toggle flex items-center text-white font-medium hover:text-gray-200 focus:underline focus:text-gray-200 dark:text-neutral-200 hover:underline underline-offset-2 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                                 aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
                                 Women
                             </button>
@@ -444,7 +450,7 @@
                         </div>
                         <div class="hs-dropdown [--strategy:static] [--adaptive:none] sm:[--trigger:hover]">
                             <button id="hs-mega-menu" type="button"
-                                class="hs-dropdown-toggle flex items-center text-white font-medium hover:text-gray-200 focus:underline focus:text-gray-200 dark:text-neutral-200 hover:underline underline-offset-2 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                class="ms-4 hs-dropdown-toggle flex items-center text-white font-medium hover:text-gray-200 focus:underline focus:text-gray-200 dark:text-neutral-200 hover:underline underline-offset-2 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
                                 aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
                                 Kids
                             </button>
@@ -1575,7 +1581,7 @@
 
         <!-- Sidebar -->
         <div id="hs-offcanvas-example"
-            class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 pt-4 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-
+            class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full font-medium transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 pt-3 pb-10 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-
              [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700 sidebar-header-complekt"
             role="dialog" tabindex="-1" aria-label="Sidebar">
 
@@ -1587,7 +1593,7 @@
                     aria-label="Toggle navigation" data-hs-overlay="#hs-offcanvas-example">
                     <span class="hidden">Esc</span>
                     <span class="block ms-1 text-xs">Close</span>
-                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M18 6 6 18"></path>
@@ -1600,7 +1606,7 @@
                 <ul class="space-y-1.5">
                     <li class="hs-accordion " id="users-accordion">
                         <button type="button"
-                            class="flex justify-between hs-accordion-toggle hs-accordion-active:outline-1 w-full text-start flex items-center gap-x-3.5 py-2 hover:underline underline-offset-2 hover:text-neutral-300 text-sm text-gray-700 rounded-lg dark:text-neutral-300 "
+                            class="flex justify-between hs-accordion-toggle hs-accordion-active:outline-1 w-full text-start flex items-center gap-x-3.5 pt-1 pb-2 hover:underline underline-offset-2 hover:text-neutral-300 text-sm text-gray-700 rounded-lg dark:text-neutral-300 "
                             aria-expanded="true" aria-controls="users-accordion">
                             Pages
                             <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400"
@@ -2451,6 +2457,7 @@
 
         <!-- ==================== start body ==================== -->
         <!-- Slider -->
+
         <div data-hs-carousel='{
             "loadingClasses": "opacity-0",
             "isInfiniteLoop": true,
@@ -2471,7 +2478,7 @@
                             <h3 class="mt-3 px-2">Our always-in-season staple, in brand new colors and <br> your
                                 favorite fits.</h3>
                             <a href=""
-                                class="text-sm hover:text-neutral-100 underline decoration-white decoration-1 underline-offset-4 mt-5">Shop
+                                class="text-base hover:text-neutral-100 underline decoration-1.5 decoration-white underline-offset-4 mt-5 hover:decoration-8">Shop
                                 women's clothing</a>
                         </div>
                     </div>
@@ -2486,17 +2493,17 @@
                                 New styles
                             </h2>
                             <!-- Responsive H3 -->
-                            <h3 class="mt-3 ">
+                            <h3 class="mt-3 text-base hover:text-neutral-100">
                                 From lightweight layers to the perfect pair of pants, <br> new seasonal favorites are
                                 here.
                             </h3>
                             <!-- Responsive Buttons -->
                             <div class="mt-7 gap-x-8 flex flex-wrap justify-center">
                                 <a href="#"
-                                    class="underline decoration-white decoration-1 underline-offset-4 mb-2 sm:mb-0">
+                                    class="underline decoration-white decoration-1.5 underline-offset-4 mb-2 sm:mb-0">
                                     Shop men
                                 </a>
-                                <a href="#" class="underline decoration-white decoration-1 underline-offset-4">
+                                <a href="#" class="underline decoration-white decoration-1.5 underline-offset-4">
                                     Shop women
                                 </a>
                             </div>
@@ -2513,10 +2520,10 @@
                             <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white px-2">Up to 50% off</h2>
                             <div class="mt-7 gap-x-8 flex flex-wrap justify-center">
                                 <a href="#"
-                                    class="underline decoration-white decoration-1 underline-offset-4 mb-2 sm:mb-0">
+                                    class="underline decoration-white decoration-1.5 underline-offset-4 mb-2 sm:mb-0">
                                     Shop men
                                 </a>
-                                <a href="#" class="underline decoration-white decoration-1 underline-offset-4">
+                                <a href="#" class="underline decoration-white decoration-1.5 underline-offset-4">
                                     Shop women
                                 </a>
                             </div>
@@ -2526,8 +2533,8 @@
             </div>
 
             <!-- Previous Button -->
-            <button type="button" style="top: 50%; left: 15px;"
-                class="hs-carousel-prev absolute inset-y-0 start-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
+            <button type="button"
+                class="hs-carousel-prev absolute top-1/2 sm:ms-4 ms-1.5 inset-y-0 start-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
                 <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -2536,8 +2543,8 @@
             </button>
 
             <!-- Next Button -->
-            <button type="button" style="top: 50%; right: 15px;"
-                class="hs-carousel-next absolute inset-y-0 end-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
+            <button type="button"
+                class="hs-carousel-next top-1/2 sm:mr-4 mr-1.5 absolute inset-y-0 end-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
                 <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -2584,17 +2591,17 @@
 
         <div class="flex flex-col w-full text-center items-center gap-y-3" style="margin: 50px 0 100px 0px;">
             <h4 class="dark:text-neutral-200" style="font-size: 1.5rem;">Trending now</h4>
-            <div class="border-gray-200 dark:border-neutral-700">
-                <nav class="flex gap-x-1 w-full border dark:bg-neutral-800 p-1 dark:border-neutral-700 rounded-lg"
+            <div class="border-gray-200 dark:border-neutral-700 p-2">
+                <nav class="flex gap-x-1 w-full border dark:bg-neutral-800 p-0.5 dark:border-neutral-700 rounded-lg"
                     aria-label="Tabs" role="tablist" aria-orientation="horizontal">
                     <button type="button"
-                        class="tab-btn sm:px-12 px-8 py-1 rounded-md bg-neutral-800 text-neutral-300  focus:bg-neutral-600 focus:text-white active"
+                        class="tab-btn text-sm sm:px-16 px-12 py-2 rounded-md bg-neutral-800 text-neutral-300  focus:bg-neutral-400 focus:text-white active"
                         id="tabs-with-underline-item-1" aria-selected="true" data-hs-tab="#tabs-with-underline-1"
                         aria-controls="tabs-with-underline-1" role="tab">
                         Men
                     </button>
                     <button type="button"
-                        class="tab-btn sm:px-12 px-8 py-1 rounded-md bg-neutral-800 text-neutral-300  focus:bg-neutral-600 focus:text-white"
+                        class="tab-btn text-sm sm:px-16 px-12 py-2 rounded-md bg-neutral-800 text-neutral-300  focus:bg-neutral-400 focus:text-white"
                         id="tabs-with-underline-item-3" aria-selected="false" data-hs-tab="#tabs-with-underline-3"
                         aria-controls="tabs-with-underline-3" role="tab">
                         Women
@@ -2602,13 +2609,13 @@
                 </nav>
             </div>
 
-            <div class="mt-3 w-full">
+            <div class="mt-5 w-full">
                 <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
                     <div data-hs-carousel='{
                             "loadingClasses": "opacity-0",
                             "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
                             "slidesQty": {
-                                "xs": 1,
+                                "xs": 2,
                                 "sm": 2,
                                 "md": 3,
                                 "lg": 4
@@ -2678,7 +2685,7 @@
                                     </div>
                                     <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex flex-col w-full items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -2735,7 +2742,7 @@
                                     </div>
                                     <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex w-full flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -2935,7 +2942,7 @@
                         "loadingClasses": "opacity-0",
                         "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
                         "slidesQty": {
-                            "xs": 1,
+                            "xs": 2,
                             "sm": 2,
                             "md": 3,
                             "lg": 4
@@ -2947,9 +2954,9 @@
                                 <!-- Carousel Body -->
                                 <div class="hs-carousel-body flex transition-transform duration-700">
                                     <!-- Slide -->
-                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
+                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-72">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex flex-col w-full items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -3004,9 +3011,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
+                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-72">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex flex-col w-full items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -3061,9 +3068,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
+                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-72">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex flex-col w-full items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -3118,9 +3125,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-60">
+                                    <div class="hs-carousel-slide px-1 w-full sm:min-w-72">
                                         <div
-                                            class="flex flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
+                                            class="flex w-full flex-col items-center bg-gray-100 dark:bg-neutral-900 rounded-lg">
                                             <!-- Card -->
                                             <div class="relative group overflow-hidden transition-all duration-300">
                                                 <!-- Wishlist Icon -->
@@ -3260,18 +3267,18 @@
         </div>
         <div class="flex w-full text-center justify-center mt-12 ">
             <a href="#"
-                class="dark:text-neutral-200 inline-flex items-center gap-x-2 text-center underline decoration-white underline-offset-4 decoration-1 mt-12">Shop
+                class="dark:text-neutral-200 inline-flex items-center gap-x-2 text-center underline decoration-white underline-offset-4 decoration-1.5 mt-12">Shop
                 all women <svg class="" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="m9 18 6-6-6-6"></path>
                 </svg></a>
         </div>
         <!--  -->
-        <div class="flex text-center justify-center mt-20 flex-col">
+        <div class="flex text-center justify-center mt-16 flex-col">
             <h4 class="text-center font-bold dark:text-neutral-200 text-xl sm:text-2xl">The better way to shop with
                 Preline <br> top-products</h4>
             <div class="flex flex-wrap justify-center gap-4 mt-4">
-                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-6 w-full">
                     <!-- Card 1 -->
                     <div class="shadow-md rounded-lg p-1 border border-1 dark:bg-neutral-900 dark:border-neutral-700">
                         <div class="flex flex-row relative h-72">
@@ -3400,7 +3407,7 @@
         </div>
         <!-- slider scroll -->
         <div class="mt-12">
-            <h1 class="dark:text-neutral-200 text-center mb-8">Shoes by classics</h1>
+            <h1 class="dark:text-neutral-200 text-center mb-4 text-2xl">Shoes by classics</h1>
             <!-- Slider -->
 
             <style>
@@ -3430,8 +3437,9 @@
     "loadingClasses": "opacity-0",
     "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
     "slidesQty": {
-      "sm": 2,
-      "lg": 5
+      "sm": 3,
+      "md":4,
+      "lg": 6
     },
     "isCentered": false,
     "isSnap": false
@@ -3468,7 +3476,7 @@
                                 <span class="absolute top-1/2 px-3 py-1 bg-white rounded-full text-xs">DUNK</span>
                             </div>
                         </div>
-                  
+
                         <div class="hs-carousel-slide snap-center">
                             <div class="object-cover flex justify-center h-full bg-gray-100 p-1 dark:bg-neutral-900">
                                 <img src="https://images.unsplash.com/photo-1700853012811-ce0a42d2b6d3?q=80&w=320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -3504,9 +3512,7 @@
                 </button>
             </div>
         </div>
-
         <!--  -->
-
 
         <!-- Slider -->
 
@@ -3516,8 +3522,8 @@
         <div class="info-section flex flex-col md:flex-row mt-20 md:px-10 md:gap-x-10 sm:px-20 px-3">
             <div class="info-box text-center px-2 ">
 
-                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="27"
+                    height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path
                         d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
@@ -3525,13 +3531,13 @@
                     <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <h3 class="dark:text-neutral-200 pt-2">Secure checkout</h3>
-                <p class="dark:text-neutral-500 pt-2">Shop with confidence using our encrypted payment system that
+                <p class="dark:text-neutral-500 pt-2 text-sm">Shop with confidence using our encrypted payment system that
                     protects your sensitive information.
                 </p>
             </div>
             <div class="info-box text-center px-2 mt-5 md:mt-0">
-                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="27"
+                    height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                     <path d="M15 18H9"></path>
@@ -3541,34 +3547,34 @@
                     <circle cx="7" cy="18" r="2"></circle>
                 </svg>
                 <h3 class="dark:text-neutral-200 pt-2">Free shipping</h3>
-                <p class="dark:text-neutral-500 pt-2">Enjoy complimentary delivery on all orders, with no minimum
+                <p class="dark:text-neutral-500 pt-2 text-sm">Enjoy complimentary delivery on all orders, with no minimum
                     purchase required.</p>
             </div>
             <div class="info-box text-center px-2 mt-5 md:mt-0">
-                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                <svg class="dark:text-neutral-200 w-full text-center" xmlns="http://www.w3.org/2000/svg" width="27"
+                    height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                 </svg>
                 <h3 class="dark:text-neutral-200 pt-2">30 days return</h3>
-                <p class="dark:text-neutral-500 pt-2">Not satisfied? Return any item within 30 days of purchase for a
+                <p class="dark:text-neutral-500 pt-2 text-sm">Not satisfied? Return any item within 30 days of purchase for a
                     full refund or exchange.</p>
             </div>
         </div>
     </div>
     <footer
         class="mt-10 py-20 bg-white dark:bg-neutral-900 mx-auto border-t border-gray-300 dark:border-neutral-700 w-full">
-        <div class="max-w-screen-xl mx-auto px-6">
+        <div class="max-w-screen-xl mx-auto sm:px-8 px-4">
             <!-- Subscribe Section -->
-            <div class="mb-8">
+            <div class="mb-7">
                 <h2 class="text-md mb-2 dark:text-neutral-200">Subscribe & get 10% off</h2>
                 <div class="flex items-center gap-2">
                     <input style="width: 100%; max-width: 350px; font-size: 1rem;" type="email"
                         placeholder="Enter email address"
-                        class="dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:placeholder-neutral-600 dark:focus:ring-neutral-600 border border-neutral-600 p-3  rounded-lg" />
+                        class="dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:placeholder-neutral-700 dark:focus:ring-neutral-700 border border-neutral-700 p-3  rounded-lg" />
                     <button
-                        class="rounded-lg px-6 py-3 dark:bg-neutral-800 text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">Sign
+                        class="rounded-lg px-6 py-3 text-sm dark:bg-neutral-800 text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">Sign
                         up</button>
                 </div>
             </div>
@@ -3576,7 +3582,7 @@
             <!-- Links Section -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-base mb-4 dark:text-neutral-200">Help</h3>
+                    <h3 class="text-sm mb-3 dark:text-neutral-200">Help</h3>
                     <ul>
                         <li><a href="#"
                                 class="text-sm hover:underline underline-offset-4 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Help
@@ -3599,7 +3605,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-base mb-4 dark:text-neutral-200">Resources</h3>
+                    <h3 class="text-sm mb-3 dark:text-neutral-200">Resources</h3>
                     <ul>
                         <li><a href="#"
                                 class="text-sm hover:underline underline-offset-4 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Gift
@@ -3613,7 +3619,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-base mb-4 dark:text-neutral-200">Company</h3>
+                    <h3 class="text-sm mb-3 dark:text-neutral-200">Company</h3>
                     <ul>
                         <li><a href="#"
                                 class="text-sm hover:underline underline-offset-4 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Newsroom</a>
@@ -3693,7 +3699,7 @@
                         </button>
                     </div>
                     <div class="mt-8">
-                        <h3 class="text-base mb-4 dark:text-neutral-200">Stay connected</h3>
+                        <h3 class="text-sm mb-4 dark:text-neutral-200">Stay connected</h3>
                         <div class="flex space-x-4">
                             <a href="#"
                                 class="text-sm hover:underline underline-offset-4 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"><svg
@@ -3728,9 +3734,9 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="flex justify-left items-center text-sm text-gray-500">
+            <div class="flex justify-left flex-wrap items-center text-sm text-gray-500">
                 <p class="text-xs dark:text-neutral-400 ">&copy; 2024 Preline Labs.</p>
-                <div>
+                <div class="flex flex-wrap">
                     <a href="#"
                         class="mx-2 text-xs hover:underline underline-offset-4 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">Terms</a>
                     <span class="mx-2">·</span>
