@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000p\u0000r\u0000e\u0000l\u0000i\u0000n\u0000e\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000-\u00002\u0000v\u0000\r\u0000 \u0000",
   "main": "tailwind.config.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "preline": "^2.5.1",
     "tailwindcss": "^3.4.15"
   },
-  "devDependencies": {},
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,7 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './**/*.{html,js}', // Barcha HTML va JS fayllar
-    './src/**/*.{html,js}', // Agar src papkasi bo'lsa
+    './src/**/*.{html,js}', // Barcha HTML va JS fayllar faqat src ichida
   ],
   plugins: [require('preline/plugin')],
   theme: {
