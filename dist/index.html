@@ -859,13 +859,13 @@
                         <!-- Notification Badge -->
                         <span
                             style="transform: translateY(-4px) translateX(4px); font-size: 10px; font-family: inherit;"
-                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs  text-white bg-white border-2 border-white rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
+                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs  dark:text-neutral-900 dark:bg-neutral-100 border-2 border-white rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
                             2
                         </span>
                     </button>
                     <!-- Modal -->
                     <div id="heart-modal"
-                        class="hidden absolute top-12 bg-white dark:bg-neutral-900 rounded-lg border border-gray-300 dark:border-neutral-700"
+                        class="hidden absolute top-12 dark:bg-neutral-800 dark:bg-neutral-900 rounded-lg border border-gray-300 dark:border-neutral-700"
                         role="dialog" tabindex="-1">
                         <div class="p-4 w-full">
                             <div class="w-full">
@@ -933,7 +933,7 @@
                         <!-- Notification Badge -->
                         <span
                             style="transform: translateY(-4px) translateX(4px); font-size: 10px; font-family: inherit;"
-                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs  text-white bg-white border-2 border-white rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
+                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs  dark:text-neutral-900 dark:bg-neutral-100 border-2 border-white rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
                             3
                         </span>
                     </button>
@@ -4338,10 +4338,6 @@
         const heartSvg = document.querySelector('.heart-modal-btn');
 
         heartButton.addEventListener('click', function (e) {
-            // Modalni ochish yoki yopish
-            heartModal.style.display = heartModal.style.display === "flex" ? "none" : "flex";
-        });
-        heartSvg.addEventListener('click', function (e) {
             // Modalni ochish yoki yopish
             heartModal.style.display = heartModal.style.display === "flex" ? "none" : "flex";
         });
