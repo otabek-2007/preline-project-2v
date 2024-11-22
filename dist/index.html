@@ -859,7 +859,7 @@
                         <!-- Notification Badge -->
                         <span
                             style="transform: translateY(-4px) translateX(4px); font-size: 10px; font-family: inherit;"
-                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs  dark:text-neutral-900 dark:bg-neutral-900 bg-neutral-100 border-2 dark:border-neutral-100 rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
+                            class="absolute -top-1 -right-1 flex items-center px-1 justify-center w-5 h-5 text-xs dark:text-neutral-900 dark:bg-neutral-900 bg-neutral-100 border-2 dark:border-neutral-100 rounded-full dark:bg-neutral-200 dark:text-neutral-800 dark:border-neutral-900">
                             2
                         </span>
                     </button>
@@ -2457,12 +2457,18 @@
 
         <!-- ==================== start body ==================== -->
         <!-- Slider -->
-
+        <style>
+            @media screen and (max-width:369px){
+                #carusel-main{
+                    margin-top: 20px;
+                }
+            }
+        </style>
         <div data-hs-carousel='{
             "loadingClasses": "opacity-0",
             "isInfiniteLoop": true,
             "slidesQty": 1
-          }' class="relative mt-4 sm:mt-8">
+          }' class="relative -mt-4 sm:mt-8" id="carusel-main">
             <div class="carusel-body-top hs-carousel relative overflow-hidden w-full min-h-96 bg-white rounded-lg">
                 <div
                     class="hs-carousel-body h-full absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
@@ -2534,7 +2540,7 @@
 
             <!-- Previous Button -->
             <button type="button"
-                class="hs-carousel-prev absolute top-1/2 sm:ms-4 ms-1.5 inset-y-0 start-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
+                class="hs-carousel-prev absolute top-1/2 sm:ms-4 ms-1 inset-y-0 start-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
                 <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -2544,7 +2550,7 @@
 
             <!-- Next Button -->
             <button type="button"
-                class="hs-carousel-next top-1/2 sm:mr-4 mr-1.5 absolute inset-y-0 end-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
+                class="hs-carousel-next top-1/2 sm:mr-4 mr-1 absolute inset-y-0 end-0 flex justify-center items-center w-[40px] h-[40px] bg-white p-5 rounded-full shadow-lg">
                 <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
